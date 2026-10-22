@@ -1,0 +1,58 @@
+{
+  "valid_rows": 24,
+  "training_rows": 16,
+  "test_rows": 8,
+  "features": [
+    "planned_progress",
+    "actual_progress",
+    "planned_budget",
+    "actual_spend",
+    "planned_duration_days",
+    "start_delay_days",
+    "project_name",
+    "milestone_name"
+  ],
+  "excluded_future_field": "actual_end_date",
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "confusion_matrix": [
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "classification_report": {
+    "Not delayed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "Delayed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    }
+  },
+  "limitations": "Only nine sample records are provided. Evaluation metrics are highly unstable and do not establish real-world accuracy."
+}
